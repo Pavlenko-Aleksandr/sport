@@ -1,0 +1,329 @@
+.players {
+    padding-top: 112px;
+
+    &__title {
+        max-width: 693px;
+        margin: 0 50% 32px 136px;
+        color: #e7e7e7;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__card {
+        
+        &-img {
+            position: absolute;
+            top: -548px;
+            left: 543px;
+        }
+
+        &-cross {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: -421px;
+            left: 839px;
+
+            &--second {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -157px;
+                left: 1317px;
+            }
+
+            &--opacity {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                opacity: 0.3;
+                top: -404px;
+                left: 861px;
+            }
+        }
+
+        &-content {
+            position: relative;
+            margin-left: 131px;
+            margin-right: 50%;
+            max-width: 640px;
+        }
+
+        &--first {
+            padding: 60px 0 56px 0;
+        }
+
+        &--second {
+            padding: 63px 0 67px 0;
+            background-color: #f5f5f7;
+        }
+
+        &--third {
+            padding: 98px 0 88px 0;
+            background-color: #0a0e34;
+        }
+
+        &-number {
+            display: inline-block;
+            vertical-align: center;
+            color: #000000;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #5e42b0;
+            }
+
+            &--third {
+                color: #9173e6;
+
+                &::after {
+                    background-color: #efefef;
+                }
+            }
+        }
+
+        &-h3 {
+            margin-left: 9px;
+            display: inline-block;
+            vertical-align: top;
+            color: #c1c1c1;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+        }
+
+        &-desc {
+            margin-top: 10px;
+            color: #000000;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 1px;
+
+            &--third {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__images {
+        display: none;
+    }
+}
+
+.my-slider {
+    display: none;
+}
+
+
+@media (max-width: 1541px) {
+    .players {
+        padding-top: 79px;
+
+        &__title {
+            margin: 0 321px 0 31px;
+        }
+
+        &__card {
+
+            &-img {
+                width: 690px;
+                height: 565px;
+                top: -391px;
+                right: -572px;
+                left: auto;
+            }
+    
+            &-cross {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -307px;
+                right: -95px;
+                left: auto;
+
+                &--second {
+                    display: none;
+                }
+    
+                &--opacity {
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    opacity: 0.3;
+                    top: -290px;
+                    right: -116px;
+                    left: auto;
+                }
+            }
+
+            &-content {
+                position: relative;
+                margin-left: 31px;
+                max-width: 100%;
+                margin-right: 321px;
+            }
+
+            &--first {
+                padding: 59px 0 12px 0;
+            }
+    
+            &--second {
+                padding: 63px 0 65px 0;
+                background-color: #f5f4f9;
+            }
+    
+            &--third {
+                padding: 52px 0 50px 0;
+                background-color: #090c35;
+            }
+
+            &-desc {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .players {
+        position: relative;
+        padding-top: 35px;
+
+        &__images {
+            display: block;
+            position: relative;
+            width: 302px;
+            min-height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-img {
+            display: block;
+            width: 302px;
+            height: 248px;
+            position: absolute;
+            top: 26px;
+        }
+
+        &-cross{
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 34px;
+            left: 71px;
+
+            &--opacity {
+                display: block;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 25px;
+                left: 49px;
+                opacity: 0.3;
+            }
+        }
+
+        &__title {
+            margin-left: 22px;
+            width: 298px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+
+        &__card {
+            display: none;
+        }
+    }
+
+    .my-slider {
+        display: block;
+        background-color: #f5f4f9;
+
+        .fotorama__dot {
+            width: 10px;
+            height: 10px;
+            background-color: #d8d8d8;
+            border: none;
+        }
+
+        .fotorama__nav__frame.fotorama__active .fotorama__dot {
+            width: 10px;
+            height: 10px;
+            background-color: #5c3caf;
+            border: none;
+        }
+        
+
+        &__card {
+
+            &-content {
+                padding: 81px 15px 0 17px;
+                width: 100%;
+            }
+
+            &-number {
+                margin-left: 1px;
+                display: inline-block;
+                vertical-align: center;
+                color: #000000;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #5e42b0;
+                }
+            }
+
+            &-h3 {
+                margin-left: 12px;
+                display: inline-block;
+                vertical-align: top;
+                color: #c1c1c1;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+            }
+
+            &-desc {
+                margin-top: 25px;
+                margin-bottom: 20px;
+                color: #000000;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.75px;
+            }
+        }  
+    }
+}

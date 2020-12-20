@@ -1,0 +1,314 @@
+.athlets {
+    padding-top: 112px;
+
+    &__title {
+        max-width: 693px;
+        margin: 0 36px 34px 50%;
+        color: #e7e7e7;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__card {
+
+        &-img {
+            position: absolute;
+            top: -443px;
+            left: -700px;
+        }
+
+        &-cross {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: -311px;
+            left: -595px;
+
+            &--opacity {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                opacity: 0.3;
+                top: -320px;
+                left: -617px;
+            }
+        }
+
+        &-content {
+            position: relative;
+            margin-left: 50%;
+            margin-right: 36px;
+            max-width: 693px;
+        }
+
+        &--first {
+            padding: 60px 0 56px 0;
+        }
+
+        &--second {
+            padding: 64px 0 57px 0;
+            background-color: #f5f4fa;
+        }
+
+        &--third {
+            padding: 91px 0 98px 0;
+            background-color: #5e42b0;
+        }
+
+        &-number {
+            display: inline-block;
+            vertical-align: center;
+            color: #000000;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #5e42b0;
+            }
+
+            &--third {
+                color: #0a0e34;
+
+                &::after {
+                    background-color: #efefef;
+                }
+            }
+        }
+
+        &-h3 {
+            margin-left: 9px;
+            display: inline-block;
+            vertical-align: top;
+            color: #c1c1c1;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+        }
+
+        &-desc {
+            margin-top: 10px;
+            color: #000000;
+            font-family: 'Proxima Nova', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 1px;
+
+            &--third {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__images {
+        display: none;
+    }
+}
+
+.my-slider {
+    display: none;
+}
+
+
+@media (max-width: 1541px) {
+    .athlets {
+        padding-top: 82px;
+
+        &__title {
+            margin: 0 56px 0 270px;
+        }
+
+        &__card {
+
+            &-img {
+                width: 497px;
+                height: 699px;
+                top: -321px;
+                left: -452px;
+            }
+    
+            &-cross {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -330px;
+                left: -230px;
+    
+                &--opacity {
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    opacity: 0.3;
+                    top: -339px;
+                    left: -252px;
+                }
+            }
+
+            &-content {
+                position: relative;
+                margin-left: 291px;
+                margin-right: 49px;
+                max-width: 100%;
+            }
+
+            &--first {
+                padding: 59px 0 45px 0;
+            }
+    
+            &--second {
+                padding: 40px 0 33px 0;
+                background-color: #f5f4f9;
+            }
+    
+            &--third {
+                padding: 40px 0 32px 0;
+                background-color: #5e42b0;
+            }
+
+            &-desc {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .athlets {
+        position: relative;
+        padding-top: 20px;
+
+        &__images {
+            display: block;
+            position: relative;
+            width: 211px;
+            min-height: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-img {
+            display: block;
+            width: 197px;
+            height: 281px;
+            position: absolute;
+            top: 14px;
+            left: 17px;
+        }
+
+        &-cross{
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 34px;
+            left: 21px;
+
+            &--opacity {
+                display: block;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 25px;
+                opacity: 0.3;
+            }
+        }
+
+        &__title {
+            margin-left: 19px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+
+        &__card {
+            display: none;
+        }
+    }
+
+    .my-slider {
+        display: block;
+        background-color: #f5f4f9;
+
+        .fotorama__dot {
+            width: 10px;
+            height: 10px;
+            background-color: #d8d8d8;
+            border: none;
+        }
+
+        .fotorama__nav__frame.fotorama__active .fotorama__dot {
+            width: 10px;
+            height: 10px;
+            background-color: #5c3caf;
+            border: none;
+        }
+        
+
+        &__card {
+
+            &-content {
+                padding: 81px 15px 0 17px;
+                width: 100%;
+            }
+
+            &-number {
+                margin-left: 1px;
+                display: inline-block;
+                vertical-align: center;
+                color: #000000;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #5e42b0;
+                }
+            }
+
+            &-h3 {
+                margin-left: 12px;
+                display: inline-block;
+                vertical-align: top;
+                color: #c1c1c1;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+            }
+
+            &-desc {
+                margin-top: 25px;
+                margin-bottom: 20px;
+                color: #000000;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.75px;
+            }
+        }
+    }
+}
